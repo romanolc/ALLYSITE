@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLY - Rastreamento Humano com Empatia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="description" content="ALLY - Segurança e autonomia para pessoas com deficiência através de rastreamento moderno e inclusivo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Página inicial do ALLY">ALLY</a>
+        <nav class="nav-menu" role="navigation">
+            <a href="index.html" class="active">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="dashboard.html">Demo Dashboard</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="privacidade.html">Privacidade</a>
+            <a href="contato.html">Contato</a>
+            <button id="toggle-high-contrast" class="btn-secondary btn" aria-label="Alternar Modo Alto Contraste">A+</button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="hero-title">ALLY — rastreamento humano com empatia.</h1>
+                <p>Segurança e autonomia para pessoas com deficiência e tranquilidade para seus cuidadores e mentores.</p>
+                <div class="hero-actions">
+                    <a href="produtos.html" class="btn btn-primary">Conheça o App e Dispositivos</a>
+                    <a href="onboarding.html" class="btn btn-secondary">Vincular Dispositivo</a>
+                </div>
+                
+                <div class="hero-image" data-asset-target="map-safe-risk" style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <div class="asset-placeholder">Carregando imagem Hero...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2 style="text-align: center;">Recursos que Fazem a Diferença</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-card">
+                    <span class="icon" aria-hidden="true">📍</span>
+                    <div>
+                        <h3>Geofencing Inteligente</h3>
+                        <p>Crie áreas seguras (Casa, Escola) e de risco. Receba alertas automáticos ao entrar ou sair.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="icon" aria-hidden="true">🧠</span>
+                    <div>
+                        <h3>Anti-Falso-Positivo</h3>
+                        <p>Lógica avançada que avalia velocidade e tempo de deslocamento por perfil, evitando alarmes desnecessários.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span class="icon" aria-hidden="true">🛠️</span>
+                    <div>
+                        <h3>Hardware Dedicado</h3>
+                        <p>Dispositivos SOS discretos, leves e com longa autonomia de bateria (ESP32, SIM868, Li-ion).</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <span class="icon" aria-hidden="true">🔒</span>
+                    <div>
+                        <h3>Conformidade LGPD</h3>
+                        <p>Seus dados são usados apenas para segurança e não são compartilhados. Privacidade é nossa prioridade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" style="background-color: var(--color-accent-mint); text-align: center;">
+            <h2>Experimente o Dashboard Mentor</h2>
+            <p>Veja em tempo real como o cuidador/mentor gerencia os usuários em um ambiente seguro.</p>
+            <a href="dashboard.html" class="btn btn-primary" style="margin-top: 1rem;">Ver Demonstração Interativa</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="sobre.html">Sobre</a>
+            <a href="privacidade.html">Privacidade / LGPD</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+        <p>© 2025 ALLY Project. Todos os direitos reservados. Projeto Escuderia 5.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
