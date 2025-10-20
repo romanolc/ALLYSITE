@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Dashboard Mentor - ALLY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    </head>
+<body style="margin: 0;">
+
+    <div id="sos-alert-banner" class="sos-alert-banner" role="alert" aria-live="assertive">
+        🚨 ALERTA SOS ATIVO! Localização em Risco!
+        <audio id="alarm-sound" src="assets/sounds/alarm.mp3" preload="auto"></audio>
+    </div>
+
+    <div id="map-container">
+        
+        <div class="map-mock">
+            </div>
+
+        <aside id="user-panel" class="user-panel" aria-labelledby="panel-title" role="dialog" aria-modal="false">
+            <h2 id="panel-title" class="visually-hidden">Detalhes do Usuário</h2>
+            <button id="panel-close-btn" class="btn" style="position: absolute; top: 10px; right: 10px; background: none;" aria-label="Fechar Painel">X</button>
+            <div id="panel-content">
+                <p>Clique em um marcador para ver os detalhes do usuário.</p>
+            </div>
+        </aside>
+
+        <div id="connectivity-status" style="position: absolute; bottom: 80px; left: 10px; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; color: white; transition: background-color 0.3s; z-index: 200;">
+            Verificando Conectividade...
+        </div>
+        
+        <button id="sos-trigger-button" class="btn" aria-label="Simular Acionamento de Alerta SOS">
+            🔴 Simular SOS
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
