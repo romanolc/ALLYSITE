@@ -1,0 +1,90 @@
+/*
+ * styles.css
+ * Paleta, Tipografia, Acessibilidade e Estilos Globais
+ */
+
+/* 1. VARIÁVEIS CSS (PALETA PASTEIS) */
+:root {
+    --color-off-white: #F6F8FB;        /* Fundo principal */
+    --color-primary-soft: #A8C6FF;     /* Azul Pastel */
+    --color-accent-peach: #FFD8B8;     /* Pêssego Claro */
+    --color-accent-mint: #C8F7D6;      /* Verde Menta Claro */
+    --color-text-dark: #1E293B;        /* Azul Petróleo Suave */
+    --color-success: #3AC48A;          /* Verde para Seguro */
+    --color-warning: #FFBF00;          /* Amarelo para Deslocamento */
+    --color-danger: #FF6B6B;           /* Vermelho para Risco/SOS */
+    --color-white: #FFFFFF;
+    
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    
+    --font-family-base: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* RESET e Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-off-white);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* 2. TIPOGRAFIA */
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+p { margin-bottom: 1em; }
+
+@media (min-width: 768px) {
+    h1 { font-size: 3.5rem; }
+}
+
+/* 3. ACESSIBILIDADE E ARIA */
+[aria-hidden="true"] {
+    display: none;
+}
+:focus {
+    outline: 3px solid var(--color-primary-soft);
+    outline-offset: 2px;
+}
+/* Modo Alto Contraste (Simulado) */
+.high-contrast {
+    filter: grayscale(100%) contrast(200%);
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+/* 4. COMPONENTES BASE */
+
+/* Botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.btn-
