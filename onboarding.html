@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular Dispositivo - ALLY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">ALLY</a>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="dashboard.html">Demo Dashboard</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="privacidade.html">Privacidade</a>
+            <a href="contato.html">Contato</a>
+            <button id="toggle-high-contrast" class="btn-secondary btn" aria-label="Alternar Modo Alto Contraste">A+</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="onboarding-flow">
+            <h1 style="text-align: center; margin-bottom: 2rem;">Vincular Novo Dispositivo ALLY</h1>
+            
+            <form id="onboarding-form">
+                
+                <div class="onboarding-step active" id="step-1">
+                    <h2>Passo 1: Identificação do Hardware</h2>
+                    <p>Use o app mobile para escanear o QR Code no seu dispositivo ALLY ou insira o código abaixo.</p>
+                    
+                    <label for="device-code">IMEI / Código do Dispositivo (Ex: ALLY-12345678)</label>
+                    <input type="text" id="device-code" name="device-code" required placeholder="Insira o código de 8 dígitos ou IMEI" aria-required="true">
+                    
+                    <button type="button" class="btn btn-primary" id="next-step-1" style="width: 100%;">Próximo</button>
+                    
+                    <div style="margin-top: 1.5rem; border-top: 1px solid #eee; padding-top: 1rem;">
+                        <p>Hardware Esperado: ESP32, SIM868 (GPS/GSM), Bateria Li-ion.</p>
+                    </div>
+                </div>
+
+                <div class="onboarding-step" id="step-2">
+                    <h2>Passo 2: Configuração de Perfil</h2>
+                    <p>Selecione o perfil do usuário para ativar a lógica Anti-Falso-Positivo ideal.</p>
+                    
+                    <label for="profile-type">Tipo de Perfil do Usuário:</label>
+                    <select id="profile-type" name="profile-type" required aria-required="true">
+                        <option value="">-- Selecione --</option>
+                        <option value="crianca">Criança (Até 12 anos)</option>
+                        <option value="jovem">Jovem (13 a 17 anos)</option>
+                        <option value="adulto">Adulto (18+)</option>
+                    </select>
+                    
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">*O perfil ajusta os limites de velocidade e deslocamento para evitar alarmes falsos.</p>
+                    
+                    <div style="display: flex; justify-content: space-between;">
+                        <button type="button" class="btn btn-secondary" id="prev-step-2">Voltar</button>
+                        <button type="submit" class="btn btn-primary">Vincular Dispositivo</button>
+                    </div>
+                </div>
+                
+                <div class="onboarding-step" id="step-3">
+                    <h2 style="color: var(--color-success);">✅ Dispositivo Vinculado com Sucesso!</h2>
+                    <p>O dispositivo de código <strong><span id="summary-code"></span></strong> foi adicionado à sua conta ALLY com o perfil <strong><span id="summary-profile"></span></strong>.</p>
+                    <p>Agora você pode monitorar o usuário no <a href="dashboard.html">Dashboard Mentor</a>.</p>
+                    <a href="index.html" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Ir para Página Inicial</a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="sobre.html">Sobre</a>
+            <a href="privacidade.html">Privacidade / LGPD</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+        <p>© 2025 ALLY Project. Todos os direitos reservados. Projeto Escuderia 5.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
