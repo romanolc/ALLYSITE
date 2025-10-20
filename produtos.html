@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos ALLY - Pulseira SOS e Bottons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">ALLY</a>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="produtos.html" class="active">Produtos</a>
+            <a href="dashboard.html">Demo Dashboard</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="privacidade.html">Privacidade</a>
+            <a href="contato.html">Contato</a>
+            <button id="toggle-high-contrast" class="btn-secondary btn" aria-label="Alternar Modo Alto Contraste">A+</button>
+        </nav>
+    </header>
+
+    <main style="padding: 2rem 5%;">
+        
+        <h1 style="text-align: center; margin-bottom: 2rem;">Dispositivos de Rastreamento ALLY</h1>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Discretos, duráveis e com um botão SOS de fácil acesso. Desenvolvidos para máxima autonomia e confiabilidade.</p>
+
+        <section class="feature-grid">
+            
+            <div class="card card-device">
+                <h3>Pulseira SOS (Modelo Esportivo)</h3>
+                <div data-asset-target="device-options" style="min-height: 250px; display: flex; align-items: center; justify-content: center;">
+                    <div class="asset-placeholder">Carregando imagem Pulseira...</div>
+                </div>
+                <p>Pulseira confortável e discreta com botão SOS integrado. Ideal para uso diário.</p>
+                <p>Autonomia Estimada: <strong>Até 48h</strong></p>
+            </div>
+            
+            <div class="card card-device">
+                <h3>Bottom SOS (Cordão / Chaveiro)</h3>
+                <div data-asset-target="device-options" style="min-height: 250px; display: flex; align-items: center; justify-content: center;">
+                    <div class="asset-placeholder">Carregando imagem Bottom Cordão...</div>
+                </div>
+                <p>Dispositivo redondo que pode ser usado em cordão ou na mochila. Duas opções de estilo.</p>
+                <p>Autonomia Estimada: <strong>Até 72h</strong></p>
+            </div>
+            
+            <div class="card card-device">
+                <h3>Bottom SOS (Presilha para Roupa)</h3>
+                <div data-asset-target="device-options" style="min-height: 250px; display: flex; align-items: center; justify-content: center;">
+                    <div class="asset-placeholder">Carregando imagem Bottom Presilha...</div>
+                </div>
+                <p>Dispositivo discreto que se prende à roupa. Resistente à água e ao impacto.</p>
+                <p>Autonomia Estimada: <strong>Até 72h</strong></p>
+            </div>
+
+        </section>
+        
+        <section class="specs-section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Especificações Técnicas e BOM Resumido</h2>
+
+            <div class="tech-specs-grid">
+                
+                <div class="spec-item">
+                    <span class="spec-icon" aria-hidden="true">⚙️</span>
+                    <h4>Microcontrolador</h4>
+                    <p><strong>ESP32</strong> (Baixo consumo, alta performance)</p>
+                </div>
+                
+                <div class="spec-item">
+                    <span class="spec-icon" aria-hidden="true">📡</span>
+                    <h4>GPS / GSM</h4>
+                    <p><strong>SIM868</strong> (Rastreamento Global + Comunicação)</p>
+                </div>
+                
+                <div class="spec-item">
+                    <span class="spec-icon" aria-hidden="true">🔋</span>
+                    <h4>Bateria</h4>
+                    <p><strong>Li-ion Recarregável</strong> (Longa duração, segura)</p>
+                </div>
+                
+                <div class="spec-item">
+                    <span class="spec-icon" aria-hidden="true">💵</span>
+                    <h4>Custo Estimado (BOM)</h4>
+                    <p><strong>R$ 150 - R$ 250</strong> (Varia conforme volume)</p>
+                </div>
+            </div>
+
+            <div class="diagram-container">
+                <h3 style="text-align: center; color: var(--color-text-dark);">Diagrama de Integração Resumido</h3>
+                <pre style="background: var(--color-off-white); padding: 1rem; border-radius: var(--border-radius-sm); overflow-x: auto;">
+[Microcontrolador (ESP32)]
+      |
++-----|-----+
+|  SIM868 (GPS/GSM)  |
++-----|-----+
+      |
+[Botão SOS & Sensores]
+      |
+[Bateria Li-ion]
+                </pre>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="sobre.html">Sobre</a>
+            <a href="privacidade.html">Privacidade / LGPD</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+        <p>© 2025 ALLY Project. Todos os direitos reservados. Projeto Escuderia 5.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
